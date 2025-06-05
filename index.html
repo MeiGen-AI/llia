@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>LLIA</title>
+  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">LLIA - Enabling Low-Latency Interactive Avatars: Real-Time
+              Audio-Driven Portrait Video Generation with Diffusion Models</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                Haojie Yu</a><sup>*</sup>,</span>
+              <span class="author-block">
+                Zhaonian Wang<sup>*</sup>,</span>
+              <span class="author-block">
+                Yihan Pan<sup>*</sup>,</span>
+              <span class="author-block">
+                Meng Cheng,</span>
+              <span class="author-block">
+                Hao Yang,</span>
+              </div>
+              <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                Chao Wang,</span>
+              <span class="author-block">
+                Tao Xie,</span>
+              <span class="author-block">
+                Xiaoming Xu<sup>†</sup>,</span>
+              <span class="author-block">
+                Xiaoming Wei,</span>
+              <span class="author-block">
+                Xunliang Cai</span>
+            </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Meituan Inc.</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution</small></span>
+                    <span class="eql-cntrb"><Small><sup>†</sup>Corresponding Author</Small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" controls loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/communication/001.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Digital Human Dialogue.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present LLIA, a novel audio-driven portrait video generation framework based on the diffusion model. Firstly, we propose robust variable-length video generation to reduce the minimum time required to generate the initial video clip or state transitions, which significantly enhances the user experience. Secondly, we propose a consistency model training strategy for Audio-Image-to-Video to ensure real-time performance, enabling a fast few-step generation. Model quantization and pipeline parallelism are further employed to accelerate the inference speed. To mitigate the stability loss incurred by the diffusion process and model quantization, we introduce a new inference strategy tailored for long-duration video generation. These methods ensure real-time performance and low latency while maintaining high-fidelity output. Thirdly, we incorporate class labels as a conditional input to seamlessly switch between speaking, listening, and idle states. Lastly, we design a novel mechanism for fine-grained facial expression control to exploit our model's inherent capacity. Extensive experiments demonstrate that our approach achieves low-latency, fluid, and authentic two-way communication. On an NVIDIA RTX 4090D, our model achieves a maximum of 78 FPS at a resolution of 384x384 and 45 FPS at a resolution of 512x512, with an initial video generation latency of 140 ms and 215 ms, respectively.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <br></br>
+
+    <!-- Method Illustration. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-4">Method Overview</h2>
+        <img src="static/images/model.png"
+          class="interpolation-image"
+          alt="Interpolate start reference image."/>
+        <div class="content has-text-justified">
+        <p>
+          Overview of the proposed method. Our pipeline introduces several novel modules: 1) before feeding the reference portrait into the ReferenceNet, we first apply portrait animation to adjust its facial expression to match our provided template; 2) class labels used to determine the avatar’s state are obtained from the input audio. These labels can be inferred directly from acoustic features, or alternatively, guided by an LLM model to indicate the appropriate state; 3) the length of the noisy latent is kept fixed during the early stage of training. In the later stage, it becomes dynamic, enabling the model to gain the capability of variable-length video generation.
+        </p>
+      </div>
+    </div>
+    <!--/ Method Illustration. -->
+
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Generated Videos</h2>
+
+      <!-- xx -->
+
+      <!-- Instant Communication. -->
+      <h2 class="title is-4">Real-time Communication</h2>
+      <div class="content has-text-justified">
+        <p>
+          Our model enables real-time communication between two digital avatars.
+        </p>
+      </div>
+
+      <div class="columns is-centered">
+        <div class="column content">
+          <video id="ng-concat" controls playsinline height="100%">
+            <source src="static/videos/communication/002.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+        <div class="column content">
+          <video id="bengio-concat" controls playsinline height="100%">
+            <source src="static/videos/communication/003.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+
+      <h2 class="title is-4">Different Portraits</h2>
+      <div class="content has-text-justified">
+        <p>
+          Our method is capable of generating realistic facial expressions and natural head movements while ensuring low latency and real-time performance.
+        </p>
+      </div>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-video1">
+            <div class="columns is-centered">
+              <div class="column content has-text-centered">
+                <video id="taylor-en" controls playsinline height="100%">
+                  <source src="static/videos/speech/001.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+      
+              <div class="column content has-text-centered">
+                <video id="taylor-cn" controls playsinline height="100%">
+                  <source src="static/videos/speech/002.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+      
+              <div class="column content has-text-centered">
+                <video id="taylor-de" controls playsinline height="100%">
+                  <source src="static/videos/speech/003.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+          <div class="item item-video2">
+            <div class="columns is-centered">
+              <div class="column content has-text-centered">
+                <video id="taylor-de" controls playsinline height="100%">
+                  <source src="static/videos/speech/004.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+              <div class="column content has-text-centered">
+                <video id="taylor-en" controls playsinline height="100%">
+                  <source src="static/videos/speech/005.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+      
+              <div class="column content has-text-centered">
+                <video id="taylor-cn" controls playsinline height="100%">
+                  <source src="static/videos/speech/006.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- 表情控制 -->
+      <h2 class="title is-4">Controlility of Expression</h2>
+      <div class="content has-text-justified">
+        <p>
+          We achieve controllable facial expression manipulation by employing portrait animation on the same portrait image.
+        </p>
+      </div>
+
+      <div class="columns is-centered">
+        <div class="column content has-text-centered">
+          <video id="abc" controls playsinline height="100%">
+            <source src="static/videos/emotion/001.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <!-- 数字人面试官 -->
+      <h2 class="title is-4">Real-world Applications</h2>
+      <div class="content has-text-justified">
+        <p>
+          Virtual interviewer
+        </p>
+      </div>
+
+      <div class="columns is-centered">
+        <div class="column content has-text-centered">
+          <video id="taylor-en" controls playsinline style="width:40%; max-width:600px; display:block; margin:0 auto;">
+            <source src="static/videos/applications/interview.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="content has-text-justified">
+        <p>
+          Chatbot on mobile phone
+        </p>
+      </div>
+
+      <div class="columns is-centered">
+        <div class="column content has-text-centered">
+          <video id="taylor-en" controls playsinline style="width:40%; max-width:600px; display:block; margin:0 auto;">
+            <source src="static/videos/applications/chatbot.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+  </div>
+</section>
+
+
+
+<!--BibTex citation -->
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section> -->
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This project is intended solely for academic research and effect demonstration. <br>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            <!-- <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>. -->
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
