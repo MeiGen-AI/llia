@@ -162,7 +162,7 @@
           alt="Interpolate start reference image."/>
         <div class="content has-text-justified">
         <p>
-          Overview of the proposed method. Our pipeline introduces several novel modules: 1) before feeding the reference portrait into the ReferenceNet, we first apply portrait animation to adjust its facial expression to match our provided template; 2) class labels used to determine the avatar’s state are obtained from the input audio. These labels can be inferred directly from acoustic features, or alternatively, guided by an LLM model to indicate the appropriate state; 3) the length of the noisy latent is kept fixed during the early stage of training. In the later stage, it becomes dynamic, enabling the model to gain the capability of variable-length video generation.
+          Overview of the proposed method. Our pipeline introduces several novel modules. 1) We first apply portrait animation to adjust its facial expression to match our provided template before feeding the reference portrait into the ReferenceNet. 2) The avatar’s states are determined by the input audio through class labels. These labels can be inferred directly from acoustic features, or alternatively guided by an LLM model to indicate the appropriate state. 3) The length of the sequential noisy latent is fixed during the early iterations. Then it turns to dynamic, enabling the model to gain the capability of variable-length video generation.
         </p>
       </div>
     </div>
