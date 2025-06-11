@@ -52,10 +52,9 @@ We propose **LLIA** , a novel audio-driven portrait video generation framework b
 * June 9, 2025: 👋 We release the [Technique-Report](https://arxiv.org/abs/2506.05806) of **LLIA** 
 * June 9, 2025: 👋 We release the [project page](https://meigen-ai.github.io/llia/) of **LLIA** 
 
-
-# CODE COMING SOON!
-<!-- ## 📑 Todo List
+## 📑 Todo List
 
 - [x] Release the technical report
 - [ ] Inference
-- [ ] Checkpoints -->
+- [ ] Checkpoints
+
