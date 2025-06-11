@@ -18,8 +18,28 @@ Haojie Yu* · Zhaonian Wang* · Yihan Pan* · Meng Cheng · Hao Yang · Chao Wan
   <img src="assets/pipe.png">
 </p> -->
 
-<!-- ## Video Demos -->
+<table align='center' border="0" style="width: 100%; text-align: center; margin-top: 80px;">
+  <tr>
+    <td>
+      <video align='center' src="https://github.com/user-attachments/assets/056bc4dd-3974-47ad-abab-34b8826daf5d" controls loop></video>
+    </td>
+  </tr>
+</table>
 
+## Video Demos
+<table border="0" style="width: 100%; text-align: left; margin-top: 20px;">
+  <tr>
+      <td>
+          <video src="https://github.com/user-attachments/assets/35d27c13-61aa-45c6-aa80-934e987e0a7c" height="320" controls loop></video>
+      </td>
+      <td>
+          <video src="https://github.com/user-attachments/assets/2ac86950-3eb7-478e-b86f-58865fce3581" height="320" controls loop></video>
+      </td>
+      <td>
+          <video src="https://github.com/user-attachments/assets/0ad03367-b369-431c-930b-b43fe513b25b" height="320" controls loop></video>
+      </td>
+  </tr>
+</table>
 
 
 ## 🔆 Introduction
